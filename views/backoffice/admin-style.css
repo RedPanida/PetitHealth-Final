@@ -1,0 +1,134 @@
+@font-face {
+    font-family: MN_MINI;
+    src: url('./fonts/MN\ MINI.ttf');
+    src: url('./fonts/MN\ MINI\ Bold.ttf'),
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: MN_MINI;
+    letter-spacing: 0.5px;
+}
+:root {
+    --primary-color: #2DB697;
+    --secondary-color: #516AE9;
+}
+.element {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(45, 182, 151, 0.3), rgba(81, 106, 233, 0.3));
+}
+.head-box {
+    background-color: var(--secondary-color);
+    padding: 10px 10px;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+.contain-box {
+    width: 100%;
+    background-color: #FCFAF9;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+.form-label {
+    font-size: 18px;
+}
+#admin-un, #admin-pw{
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    text-align: left;
+}
+.btn-admin-login {
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+/*Admin Page*/
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  padding-top: 3rem;
+  overflow-y: auto;
+  background-color: #f8f9fa;
+}
+.sidebar .nav-link {
+  color: #343a40;
+  font-weight: 500;
+  margin: 5px 0;
+}
+.sidebar .nav-link:hover {
+  background-color: #e9ecef;
+  border-radius: 5px;
+}
+.main-content {
+  margin-left: 200px;
+}
+.breadcrumb {
+  background-color: transparent;
+  margin-bottom: 0;
+}
+.btn-add-blog, .btn-edit{
+  padding: 10px;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  border: 5px solid var(--secondary-color);
+  color: #fff;
+  box-shadow: 0px 5px 5px #dfdfdf;
+  transition: all .25s ease-in;
+  font-size: 18px;
+}
+.btn-add-blog:hover, .btn-edit:hover {
+  background-color: #fff;
+  color: var(--secondary-color);
+  border: 5px solid #516AE9;
+}
+.img-blog {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.card-body {
+  height: 300px;
+}
+.card-text {
+  height: 50px;
+  overflow-y: scroll;
+}
+.btn-delete {
+  background-color: #FF6969;
+  padding: 10px;
+  border-radius: 5px;
+  border: 5px solid #FF6969;
+  color: #fff;
+  box-shadow: 0px 5px 5px #dfdfdf;
+  transition: all .25s ease-in;
+  font-size: 18px;
+}
+.btn-delete:hover {
+  background-color: #fff;
+  color: #FF6969;
+  border: 5px solid #FF6969;
+}
+/* .swal-input {
+  height: 2.625em;
+  padding: 0 0.75em;
+} */
